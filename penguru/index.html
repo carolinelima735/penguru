@@ -1,36 +1,285 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Penguru</title>
-  <link rel="icon" type="image/png" href="./imagens/pengurulogo.png">
-  <link rel="stylesheet" href="./estilos/styles.css">
-  <script defer src="./javascript/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguru - Learn Linux Commands The Easy Way</title>
+    <meta name="description" content="Learn Linux commands from zero to hero with Penguru's direct, practical approach. Master the terminal and become a Linux expert.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@0.263.0"></script>
 </head>
 <body>
-  <header>
-    <h1>Penguru</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="conteudo.html">Conteúdo</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-  </header>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <i data-lucide="terminal" class="logo-icon"></i>
+                <span class="logo-text">Penguru</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#commands">Commands</a></li>
+                    <li><a href="#learn">Learn</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#learn" class="btn btn-primary">Start Learning</a>
+        </div>
+    </header>
 
-  <section class="hero">
-    <h2>O caminho do Linux começa aqui.</h2>
-    <p>Aprenda do zero. Domine o terminal. Torne-se um Penguru.</p>
-    <a href="./contato.html" class="btn">Comece agora</a>
-  </section>
+    <section id="home" class="hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-decoration-1"></div>
+        <div class="hero-decoration-2"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>O caminho do Linux <span class="text-orange">começa aqui.</span></h1>
+                <p>Aprenda do zero. Domine o terminal. Seja um Penguru.</p>
+                <div class="hero-buttons">
+                    <a href="#learn" class="btn btn-primary">Começar Agora</a>
+                    <a href="#commands" class="btn btn-outline">Ver Comandos</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="hero-image-glow"></div>
+                <img src="assets/logo_penguru-removebg-preview.png" alt="Logo Penguru">
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#learn">
+                <i data-lucide="arrow-down"></i>
+            </a>
+        </div>
+    </section>
 
-  <section id="sobre">
-    <h2>Sobre o curso</h2>
-    <p>O Penguru é um curso de Linux para iniciantes, feito pra quem quer dominar o terminal, entender o sistema de verdade e conquistar liberdade digital. Conteúdo direto ao ponto, focado na prática e no que realmente importa.</p>
-  </section>
+    <section id="learn" class="learning-path">
+        <div class="container">
+            <div class="section-header">
+                <h2>Learning Path</h2>
+                <p>Follow our structured learning path to go from Linux beginner to command line ninja.</p>
+            </div>
 
-  <footer>
-    <p>&copy; 2025 Penguru. Todos os direitos reservados.</p>
-  </footer>
+            <div class="learning-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3>Learn the Basics</h3>
+                    <p>Start with essential commands and understand the Linux file system hierarchy.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i data-lucide="terminal"></i>
+                    </div>
+                    <h3>Master the Terminal</h3>
+                    <p>Become proficient with the command line interface and shell scripting.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3>Automate with Scripts</h3>
+                    <p>Create shell scripts to automate repetitive tasks and boost productivity.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">
+                        <i data-lucide="server"></i>
+                    </div>
+                    <h3>Advanced System Management</h3>
+                    <p>Learn system administration, service management, and network configuration.</p>
+                </div>
+            </div>
+
+            <div class="section-footer">
+                <a href="#commands" class="btn btn-primary">Start Your Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Learn With Penguru</h2>
+                <p>Our approach to teaching Linux is direct, practical, and designed for rapid learning.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i data-lucide="book-open"></i>
+                    <h3>Practical Learning</h3>
+                    <p>Learn Linux commands through practical examples and real-world scenarios.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i data-lucide="code"></i>
+                    <h3>Interactive Terminal</h3>
+                    <p>Practice commands in our interactive terminal simulator without risk.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i data-lucide="clock"></i>
+                    <h3>Learn at Your Pace</h3>
+                    <p>Self-paced tutorials that fit your schedule and learning style.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i data-lucide="users"></i>
+                    <h3>Community Support</h3>
+                    <p>Join our community of Linux enthusiasts to share and learn together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="commands">
+        <div class="container">
+            <div class="section-header">
+                <h2>Linux Commands</h2>
+                <p>Master these essential Linux commands to navigate the terminal like a pro.</p>
+            </div>
+
+            <div class="commands-categories">
+                <button class="category-btn active" data-category="navigation">
+                    🧭 Navigation
+                </button>
+                <button class="category-btn" data-category="file">
+                    📄 File Operations
+                </button>
+                <button class="category-btn" data-category="permissions">
+                    🔒 Permissions
+                </button>
+                <button class="category-btn" data-category="system">
+                    🖥️ System Info
+                </button>
+            </div>
+
+            <div class="commands-container">
+                <div class="commands-list">
+                    <div class="commands-list-header">Available Commands</div>
+                    <div class="commands-list-content"></div>
+                </div>
+
+                <div class="command-details">
+                    <div class="command-info">
+                        <h3></h3>
+                        <div class="command-syntax">
+                            <h4>Syntax:</h4>
+                            <code></code>
+                        </div>
+                        <div class="command-example">
+                            <h4>Example:</h4>
+                            <code></code>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-title">Terminal</div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-prompt">
+                                <span class="terminal-user">user@penguru:</span>
+                                <span class="terminal-path">~$</span>
+                                <span class="terminal-input"></span>
+                                <span class="terminal-cursor"></span>
+                            </div>
+                            <div class="terminal-output"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join the Penguru Community</h2>
+                <p>Get weekly Linux tips, command guides, and exclusive resources delivered to your inbox.</p>
+                
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">
+                        Subscribe
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>
+                
+                <div class="newsletter-success" hidden>
+                    Thank you for subscribing! Check your email for confirmation.
+                </div>
+                
+                <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i data-lucide="terminal"></i>
+                        <span>Penguru</span>
+                    </div>
+                    <p>Simplifying Linux learning through practical, hands-on tutorials and resources.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="github"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#commands">Commands</a></li>
+                        <li><a href="#learn">Learn</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Command Reference</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Shell Scripts</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>contact@penguru.com</li>
+                        <li>São Paulo, Brazil</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Penguru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="commands.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
